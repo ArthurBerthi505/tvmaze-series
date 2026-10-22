@@ -1,7 +1,7 @@
 {
   "name": "tvmaze-series",
   "description": "Aplicativo Expo para explorar séries e episódios da API TVmaze.",
-  "license": "0BSD",
+  "license": "MIT",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {

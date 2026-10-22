@@ -110,34 +110,34 @@ Para refazer essas capturas, execute `npm run web -- --port 8081` em um terminal
 
 Se a disciplina exigir prints do aplicativo nativo, abra o projeto no Expo Go, capture a listagem, toque em uma série e capture o detalhe. Envie essas duas imagens no Teams.
 
-## Publicar no GitHub preservando os commits
+## Repositório e histórico
 
-O ZIP inclui a pasta `.git`, com os commits realizados durante o desenvolvimento. Extraia o ZIP inteiro, preservando essa pasta. Confira o histórico:
+O projeto está publicado em [ArthurBerthi505/tvmaze-series](https://github.com/ArthurBerthi505/tvmaze-series).
+
+Para obter o projeto com o histórico de commits:
 
 ```bash
-git log --oneline
+git clone https://github.com/ArthurBerthi505/tvmaze-series.git
+cd tvmaze-series
 ```
 
-Os commits iniciais identificam o assistente que produziu o projeto. Configure sua identidade para seus próximos commits:
+Em seguida, execute `npm ci` e `npm start`, conforme as instruções acima.
+
+As quatro etapas do desenvolvimento foram publicadas em commits separados, após o commit inicial criado pelo GitHub. A publicação pela integração gera novos identificadores de commit, mantendo o conteúdo de cada etapa.
+
+O ZIP disponibilizado junto à entrega contém a pasta `.git` com o histórico local original. O ZIP baixado pelo botão **Code** do GitHub contém os arquivos; use `git clone` para obter também o histórico publicado.
+
+Configure sua identidade para seus próximos commits:
 
 ```bash
 git config user.name "SEU NOME"
 git config user.email "SEU EMAIL DO GITHUB"
 ```
 
-No GitHub, crie um repositório **público** chamado `tvmaze-series`, vazio, sem adicionar README, licença ou `.gitignore` pelo site. Na pasta do projeto, substitua `SEU_USUARIO` e execute:
-
-```bash
-git remote add origin https://github.com/SEU_USUARIO/tvmaze-series.git
-git push -u origin main
-```
-
-O GitHub pode solicitar autenticação. O envio pelo Git preserva o histórico; carregar arquivos apenas pelo site não transfere os commits locais.
-
 ## Entrega no Teams
 
 1. Revise o código, execute o aplicativo e confirme os critérios da disciplina.
-2. Publique o repositório como público e confira se os arquivos e commits aparecem.
+2. Abra o repositório público e confira se os arquivos e commits aparecem.
 3. Anexe o link do repositório e os dois prints solicitados.
 
 Este projeto foi produzido com auxílio de IA. O enunciado informado prevê possíveis descontos por esse uso; siga as regras da disciplina e compreenda o código antes de entregar.
